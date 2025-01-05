@@ -1,0 +1,113 @@
+:root{
+    --primary-bg: #103e84;
+    --secondary-bg: #5e5e5e;
+    --primary-text: black;
+    --secondary-text: white;
+    --titles: #103e84;
+    --font: "Roboto", serif;
+    --size: 10pt;
+}
+
+*{
+    margin: 0;
+    font-family: var(--font);
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+main aside{
+    width: 30%;
+    background: var(--secondary-bg);
+}
+
+main aside .header{
+    width: 100%;
+    height: 15%;
+    background: var(--primary-bg);
+}
+
+main aside img{
+    width: 80%;
+    border-radius: 50%;
+    margin-left: 10%;
+    margin-top: -40%;
+    border: 5px solid var(--secondary-bg);
+}
+
+main aside .block{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--secondary-text);
+}
+
+main aside .block ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+main aside .block ul li{
+    display: flex;
+    gap: 5%;
+}
+
+main aside .block ul li .icon{
+    width: 10%;
+    fill: var(--secondary-text);
+}
+
+main aside .block ul li p {
+    width: 80%;
+    font-size: var(--size);
+}
+
+main aside .block ul li p a {
+    text-decoration: none;
+    color: var(--secondary-text);
+    word-wrap: break-word;
+}
+
+
+main article{
+    width: 70%;
+    padding: 1rem;
+}
+
+main article h1{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+main article .block hr{
+    background: var(--titles);
+}
+
+main article .block h2{
+    color: var(--titles);
+    margin-bottom: 1rem;
+}
+
+
+main article .block {
+    font-size: var(--size);
+    margin-bottom: 2rem;
+}
+
+main article .block ul{
+    padding: 1rem;
+    /* list-style: none; */
+}
+
+main article .block ul li{
+    margin-bottom: .2rem;
+}
